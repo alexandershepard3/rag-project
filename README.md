@@ -1,0 +1,1 @@
+This is my project about RAG. This beginning stage is just the outline and I will add more once I move on.
