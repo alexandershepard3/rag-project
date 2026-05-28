@@ -1,1 +1,1 @@
-This is my project about RAG. This beginning stage is just the outline and I will add more once I move on.
+This is my project about RAG. This beginning stage is just the outline and I will add more once I move on. So I just finished the base for my RAG project I added the necaissities and made my rag_app.py. It gets my API key .env to make it AI choices.
