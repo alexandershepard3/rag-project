@@ -35,12 +35,17 @@ def test_gemini():
         model = genai.GenerativeModel(
             "models/gemini-2.5-flash"
         )
+        user_prompt = "picking a favorite color"
+        outline_prompt = f"Create an outline for {user_prompt}"
 
         # Generate response
-        response = model.generate_content(
-            "Give me a number between 1 and 10"
+        outline_response = model.generate_content(
+            outline_prompt
         )
-
+        response_prompt = f"Create a 3 sentenceresponse to the following outline: {outline_response.text}"
+        response = model.generate_content(
+            response_prompt
+        )
         # Return text
         return {
             "message": response.text
